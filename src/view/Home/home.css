@@ -1,0 +1,41 @@
+/* Home */
+.home {
+	padding-bottom: 15vw;
+}
+
+.home h1 {
+	margin: 0;
+}
+
+.home h1:first-child {
+	margin-top: 1em;
+}
+
+.wave-svg-1 {
+	position: absolute;
+}
+
+.web-dev-svg {
+	height: auto;
+	padding: 2em 0;
+}
+
+.web-dev-content {
+	display: flex;
+	align-items: center;
+}
+
+/**
+*	Resposive
+*/
+@media (min-width: 675px) {
+	.web-dev-svg {
+		width: clamp(200px, 40vw, 500px);
+		padding: 0;
+	}
+
+	.web-dev-content {
+		width: clamp(30%, 30vw, 100%);
+		padding: 0;
+	}
+}

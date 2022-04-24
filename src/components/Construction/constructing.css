@@ -1,0 +1,28 @@
+
+.construct-svg-container{
+    display: flex;
+    justify-content: center;
+}
+
+img.construct-svg{
+    width: 35rem;
+}
+
+.content{
+    margin: 2.5rem;
+}
+
+@media (max-width: 600px) {
+    .constructing-page {
+        height: auto;
+        /* display: grid;
+        grid-template-columns: 100%;
+        place-items: center; */
+    }
+
+    img.construct-svg{
+        width: 20rem;
+        /* float: right; */
+        
+    }
+}

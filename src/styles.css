@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* Fonts
+-----
+font-family:  'Consolas', 'Segoe UI', 'Roboto', serif;
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+
+ */
+
+:root {
+	--c-brand: #f9bd19;
+	--c-base: #fffbe5;
+	--text-light-1: #2C3E50;
+	--text-light-2: #243241;
+	--text-light-3: #18212b;
+	--text-dark-1: #fffbe5;
+	--text-dark-2: #fcf9ed;
+	--text-dark-3: #fffef8;
+}
+
+@font-face {
+	font-family: 'Consolas';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Consolas Regular'), local('ConsolasRegular'),
+		url('./assets/fonts/consola.ttf') format('truetype');
+	font-display: swap;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1.125rem;
+	font-weight: 400;
+	background-color: var(--c-base);
+	color: var(--text-light-3);
+}
+
+h1, h2, h3, h4, h5, a {
+	font-family: 'Consolas';
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+/* =====================
+Functionality 
+=======================*/
+.stop-scrolling {
+	height: 100%;
+	overflow: hidden;
+}
+
+.scroll-top {
+	cursor: pointer;
+	position: fixed;
+	bottom: 1.5rem;
+	right: 1.5rem;
+	z-index: 100;
+}
+
+/* =====================
+Typography 
+=======================*/
+a {
+	color: var(--text-light-1);
+	text-decoration: none;
+	font-weight: 700;
+}
+
+a:active, a:visited {
+	color: var(--text-light-1);
+	text-decoration: none;
+}
+
+.navbar a {
+	position: relative;
+	transition: .25s;
+}
+
+.navbar a:hover {
+	color: var(--c-brand);
+}
+
+.navbar a::before {
+	position: absolute;
+	content: '';
+	height: 100%;
+	width: 0%;
+	border-bottom: 2.5px solid var(--c-brand);
+	transition: 1s;
+}
+
+.navbar a:hover::before {
+	width: 100%;
+}
+
+/* a.current-page:hover {
+	border-bottom: 2.5px solid var(--c-brand);
+} */
+
+strong {
+	font-weight: 700;
+}
+
+hr {
+	margin: 1rem 0 1rem 0;
+}
+
+h1 {
+	font-size: clamp(2rem, 4vw, 2.5rem);
+
+}
+
+h2 {
+	font-size: clamp(1.5rem, 2.5vw, 2rem);
+}
+
+p, span {
+	font-size: clamp(1.1rem, 2vw, 1.2rem);
+}
+
+/* =====================
+Layout 
+=======================*/
+main section {
+	position: relative;
+}
+
+.wave-svg {
+	position: absolute;
+	width: 100%;
+	height: min-content;
+}
+
+.content {
+	width: 90%;
+	max-width: calc(100vw - 20%);
+	margin: 0 auto;
+}
+
+.container-flex {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	padding: 1em 0;
+}
+
+/* Loader */
+.loading-logo {
+	padding: 5em;
+	width: 4.5em;
+}
+
+.backdrop {
+	z-index: 1000;
+}
+
+.scroll-top svg {
+	color: var(--c-base);
+	padding: 5px;
+	background-color: var(--c-brand);
+	border-radius: 50%;
+	cursor: 'pointer';
+}
+
+/**
+*	Resposive
+*/
+@media (min-width: 675px) {
+	.loading-logo {
+		width: 5.5em;
+	}
+
+	.container-flex {
+		flex-direction: row;
+	}
+}

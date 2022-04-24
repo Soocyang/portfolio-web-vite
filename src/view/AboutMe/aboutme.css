@@ -1,0 +1,63 @@
+/* About-me */
+.about-me {
+	background-color: #f9bd19;
+	margin-bottom: 20vw;
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+.about-me .about-me-description {
+	width: 100%;
+}
+
+.about-me a, .about-me a:active, .about-me a:visited {
+	color: #000000;
+	text-decoration: none;
+}
+
+.about-me .tech-stack-description {
+	order: -1;
+}
+
+.tech-stack-swiper {
+	width: clamp(200px, 20vw, 250px);
+	height: clamp(250px, 25vw, 312.5px);
+	padding: 1em;
+}
+
+.tech-stack-swiper .swiper-slide {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 18px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	font-size: 22px;
+	font-weight: bold;
+	background-color: var(--c-base);
+}
+
+@media (min-width: 675px) {
+
+	.about-me .about-me-description,
+	.about-me .tech-stack-description {
+		width: 60%;
+		width: clamp(50%, 100vw, 60%);
+		padding: 1em;
+	}
+
+	.about-me .img-me {
+		height: auto;
+		width: clamp(250px, 20vw, 300px);
+		padding: 1em;
+		border-left: .2rem solid var(--c-base);
+	}
+
+	.about-me .img-me img{
+		object-fit: contain;
+	}
+
+	.about-me .tech-stack-description {
+		order: 1;
+	}
+
+}

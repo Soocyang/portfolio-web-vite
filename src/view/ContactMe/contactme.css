@@ -1,0 +1,35 @@
+/* Contact me */
+
+.contact-me {
+  padding: 10vh 0;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.contact-me address {
+  font-style: normal;
+}
+
+.contact-me address a {
+  display: flex;
+  align-items: center;
+  padding: .5em 0;
+  color: inherit;
+}
+
+.contact-me .contact-icon-group {
+  font-size: 2.5rem;
+}
+
+@media (min-width: 675px) {
+  .contact-me .contact-me-svg {
+    width: clamp(20px, 40vw, 500px);
+    /* padding: 0 clamp(0em, 5vw, 3em); */
+  }
+
+  .contact-me .contact-me-description {
+    width: clamp(30%, 30vw, 100%);
+    /* padding: 0 clamp(0m, 5vw, 3em); */
+  }
+
+}

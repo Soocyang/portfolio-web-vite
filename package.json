@@ -12,7 +12,10 @@
   },
   "dependencies": {
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "framer-motion": "^4.1.17",
+    "react-icons": "^4.3.1",
+    "swiper": "^8.0.3"
   },
   "devDependencies": {
     "@types/react": "^18.0.0",

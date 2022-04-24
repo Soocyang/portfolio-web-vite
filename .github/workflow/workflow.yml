@@ -1,0 +1,36 @@
+name: Github Pages Deploy
+
+on: 
+  push: 
+    branches:
+      - "master"
+
+jobs: 
+  build: 
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [12.x, 14.x, 16.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+
+    steps:
+    - name: Checkout 🛎️
+    - uses: actions/checkout@v3
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+
+    - name: Install & Build ⚙
+      run: npm install && npm run build
+
+    - name: Deploy 🚀
+      run: JamesIves/github-pages-deploy-action@v4.3.0
+      with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: dist # The folder the action should deploy.
+
+

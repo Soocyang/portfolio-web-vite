@@ -7,8 +7,10 @@ import "swiper/css/navigation";
 
 import './mywork.css';
 
+import tempImage from '../../assets/img/ingredient-picker.jpeg'
+
 const MyWork = ({ onModalOpen }) => {
-  const slides = Array(5).fill('🛸 Loading...')
+  const slides = Array(5).fill('Project Title')
 
   return (
     <section id='my-work' className="my-work">
@@ -38,7 +40,7 @@ const MyWork = ({ onModalOpen }) => {
               }
             }}
             effect={"cards"}
-            // centeredSlides={true}
+            centeredSlides={true}
             autoplay={{
               delay: 3000,
               disableOnInteraction: false,
@@ -49,7 +51,12 @@ const MyWork = ({ onModalOpen }) => {
           >
             {slides.map((slide, index) => (
               <SwiperSlide key={index} onClick={() => onModalOpen()}>
-                {slide}
+                <div className='project-card' style={{ backgroundImage: `url(${tempImage})` }}>
+                  <div className='content'>
+                    <h3 className='title'>{slide}</h3>
+                    <span className='description'>descriptions...</span>
+                  </div>
+                </div>
               </SwiperSlide>
             ))}
           </Swiper>

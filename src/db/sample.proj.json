@@ -1,0 +1,57 @@
+[
+  {
+    "title": "Ingredient Picker",
+    "about": "A multiple selection form, flexible to alter form selection using json",
+    "description": "A multiple selection form, flexible to alter form selection using json",
+    "tags": [
+      "React",
+      "React Bootstrap",
+      "JSON"
+    ],
+    "thumbnail_url": "temp url..."
+  },
+  {
+    "title": "Link Shortener",
+    "about": "A link shoterner!",
+    "description": "A link shoterner!",
+    "tags": [
+      "Glitch.com",
+      "NodeJS",
+      "json-server"
+    ],
+    "thumbnail_url": "temp url..."
+  },
+  {
+    "title": "Discord Bot",
+    "about": "A discord bot allows you to stream musics from youtube!",
+    "description": "A discord bot allows you to stream musics from youtube!",
+    "tags": [
+      "DiscordJS",
+      "NodeJS",
+      "YouTube"
+    ],
+    "thumbnail_url": "temp url..."
+  },
+  {
+    "title": "Mobile IELTS Listening Test System",
+    "about": "This is my final year project that I have completed during my CS degree!",
+    "description": "This is my final year project that I have completed during my CS degree!",
+    "tags": [
+      "C#",
+      ".NET Core",
+      "Boostrap"
+    ],
+    "thumbnail_url": "temp url..."
+  },
+  {
+    "title": "Canteen Management System",
+    "about": "A simple CMS build with Java. My very 1st web based application project!",
+    "description": "A simple CMS build with Java. My very 1st web based application project!",
+    "tags": [
+      "Java",
+      "JSP",
+      "Boostrap"
+    ],
+    "thumbnail_url": "temp url..."
+  }
+]

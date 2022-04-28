@@ -38,6 +38,7 @@
 	align-items: end;
 	flex-direction: row;
 	justify-content: space-between;
+	text-align: left;
 	transition: all .5s;
 }
 
@@ -57,7 +58,7 @@
 	margin-bottom: 0;
 }
 
-.project-card > .content > span {
+.project-card>.content>span {
 	font-size: 1rem;
 }
 

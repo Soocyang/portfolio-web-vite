@@ -1,0 +1,56 @@
+.modal-card {
+  position: relative;
+  background-color: var(--c-base);
+  border-radius: .5em;
+  width: 80vw;
+  height: 90vh;
+}
+
+.modal-card .close {
+  position: absolute;
+  top: .25em;
+  right: .5em;
+  color: var(--text-light-1);
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal-card .close:hover,
+.modal-card .close:focus {
+  color: var(--text-light-3);
+  /* text-decoration: none; */
+  cursor: pointer;
+}
+
+.modal-card .card-header,
+.modal-card .card-content{
+  padding: 1em;
+}
+
+.modal-card .card-header{
+  border-radius: .5em .5em 0 0;
+}
+
+.modal-card .card-header h3{
+  margin: 0;
+}
+
+.modal-card .card-content{
+  height: calc(90vh - 6em);
+  overflow: scroll;
+}
+
+/**
+*	Resposive
+*/
+/* @media (min-width: 675px) {
+  .modal-card {
+    position: relative;
+    background-color: var(--c-base);
+    padding: 20px;
+    border-radius: 1em;
+    width: 90%;
+    height: 90%;
+  }
+} */

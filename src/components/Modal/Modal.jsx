@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import './modal.css';
 
-const Modal = ({ isOpen, onModalOpen }) => {
+const Modal = ({ isOpen, onModalOpen, currProj, children }) => {
 
   const modalRef = useRef(null)
   
@@ -17,10 +17,7 @@ const Modal = ({ isOpen, onModalOpen }) => {
   return (
     <div className={`modal ${isOpen ? 'open' : ''}`} >
       <div className="modal-content" ref={modalRef}>
-        <div className="modal-card">
-          <span className="close" onClick={() => onModalOpen()}>&times;</span>
-          test
-        </div>
+        {children}
       </div>
     </div>
   )

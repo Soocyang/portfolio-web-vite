@@ -10,7 +10,11 @@ import './mywork.css';
 import tempImage from '../../assets/img/ingredient-picker.jpeg'
 
 const MyWork = ({ onModalOpen }) => {
-  const slides = Array(5).fill('Project Title')
+  const slides = Array(5).fill({
+    title: 'Ingredient Picker',
+    description: 'A multiple selection form, flexible to alter form selection using json',
+    thumbnail_url: 'temp url...',
+  })
 
   return (
     <section id='my-work' className="my-work">
@@ -53,8 +57,8 @@ const MyWork = ({ onModalOpen }) => {
               <SwiperSlide key={index} onClick={() => onModalOpen()}>
                 <div className='project-card' style={{ backgroundImage: `url(${tempImage})` }}>
                   <div className='content'>
-                    <h3 className='title'>{slide}</h3>
-                    <span className='description'>descriptions...</span>
+                    <h3 className='title'>{slide.title}</h3>
+                    <span className='description'>{slide.description}</span>
                   </div>
                 </div>
               </SwiperSlide>

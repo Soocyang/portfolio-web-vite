@@ -8,7 +8,7 @@ function ProjectShowcase({currProj, onModalOpen}) {
         <h3>{currProj.title}</h3>
       </div>
       <div className="card-content">
-        
+        🏃‍♂️ Work In Progress... 
       </div>
     </div>
   )

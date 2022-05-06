@@ -9,8 +9,6 @@ import './mywork.css';
 
 import projectList from '../../db/sample.proj.json'
 
-import tempImage from '../../assets/img/ingredient-picker.jpeg'
-
 const MyWork = ({ onModalOpen }) => {
   const slides = Array(5).fill({
     title: 'Ingredient Picker',
@@ -57,7 +55,7 @@ const MyWork = ({ onModalOpen }) => {
           >
             {projectList.map((slide, index) => (
               <SwiperSlide key={index} onClick={() => onModalOpen(slide)}>
-                <div className='project-card' style={{ backgroundImage: `url(${tempImage})` }}>
+                <div className='project-card' style={{ backgroundImage: `url(${slide.thumbnail_url})` }}>
                   <div className='content'>
                     <h3 className='title'>{`${slide.title}`}</h3>
                     <span className='description'>{slide.description}</span>

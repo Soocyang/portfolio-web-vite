@@ -22,29 +22,3 @@
   align-items: center;
   justify-content: center;
 }
-
-.modal-card {
-  position: relative;
-  background-color: var(--c-base);
-  padding: 20px;
-  border-radius: 1em;
-  width: 75%;
-  height: 70%;
-}
-
-.modal-card .close {
-  position: absolute;
-  top: .25em;
-  right: .5em;
-  color: var(--text-light-1);
-  font-size: 28px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.modal-card .close:hover,
-.modal-card .close:focus {
-  color: var(--text-light-3);
-  text-decoration: none;
-  cursor: pointer;
-}

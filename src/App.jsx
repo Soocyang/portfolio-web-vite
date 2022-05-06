@@ -12,6 +12,8 @@ import Footer from './components/Footer/Footer';
 import ScrollTop from './components/ScrollTop'
 import Modal from './components/Modal';
 
+import ProjectShowcase from './components/ProjectShowcase'
+
 import './styles.css'
 
 function App() {
@@ -20,6 +22,7 @@ function App() {
 	const [showScrollTop, setShowScrollTop] = useState(false)
 	const [navbarCollapse, setNavbarCollapse] = useState(false)
 	const [isOpen, setIsOpen] = useState(false)
+	const [currProj, setCurrProj] = useState({})
 
 	// Get client cookies check is visited to mock loading screen
 	useEffect(() => {
@@ -63,7 +66,8 @@ function App() {
 		}
 	}, [])
 
-	const handleModalOpen = () => {
+	const handleModalOpen = (projectInfo) => {
+		if (projectInfo) setCurrProj(projectInfo)
 		if (isOpen) setIsOpen(false);
 		else setIsOpen(true);
 	}
@@ -80,7 +84,9 @@ function App() {
 				<ContactMe />
 				<Footer />
 			</Main>
-			<Modal isOpen={isOpen} onModalOpen={handleModalOpen} />
+			<Modal isOpen={isOpen} onModalOpen={handleModalOpen} >
+				<ProjectShowcase currProj={currProj} onModalOpen={handleModalOpen} />
+			</Modal>
 			{showScrollTop && <ScrollTop />}
 		</div>
 	)

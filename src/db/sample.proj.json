@@ -8,7 +8,7 @@
       "React Bootstrap",
       "JSON"
     ],
-    "thumbnail_url": "/src/assets/img/ingredient-picker.jpeg"
+    "thumbnail_url": "/ingredient-picker.jpeg"
   },
   {
     "title": "Link Shortener",
@@ -19,7 +19,7 @@
       "NodeJS",
       "json-server"
     ],
-    "thumbnail_url": "/src/assets/img/link-shortener.png"
+    "thumbnail_url": "/link-shortener.png"
   },
   {
     "title": "Discord Bot",
@@ -30,7 +30,7 @@
       "NodeJS",
       "YouTube"
     ],
-    "thumbnail_url": "/src/assets/img/dj-murrr-bot.png"
+    "thumbnail_url": "/dj-murrr-bot.png"
   },
   {
     "title": "Mobile IELTS Listening Test System",
@@ -41,7 +41,7 @@
       ".NET Core",
       "Boostrap"
     ],
-    "thumbnail_url": "/src/assets/img/ielts-tms.png"
+    "thumbnail_url": "/ielts-tms.png"
   },
   {
     "title": "Canteen Management System",
@@ -52,6 +52,6 @@
       "JSP",
       "Boostrap"
     ],
-    "thumbnail_url": "/src/assets/img/bricks-cms.png"
+    "thumbnail_url": "/bricks-cms.png"
   }
 ]

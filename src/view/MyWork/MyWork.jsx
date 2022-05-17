@@ -54,13 +54,15 @@ const MyWork = ({ onModalOpen }) => {
             className="my-work-swiper"
           >
             {projectList.map((slide, index) => (
-              <SwiperSlide key={index} onClick={() => onModalOpen(slide)}>
-                <div className='project-card' style={{ backgroundImage: `url(${slide.thumbnail_url})` }}>
-                  <div className='content'>
-                    <h3 className='title'>{`${slide.title}`}</h3>
-                    <span className='description'>{slide.description}</span>
+              <SwiperSlide key={index}>
+                <a href={slide.project_url} target="_blank" rel="noopener noreferrer">
+                  <div className='project-card' style={{ backgroundImage: `url(${slide.thumbnail_url})` }}>
+                    <div className='content'>
+                      <h3 className='title'>{`${slide.title}`}</h3>
+                      <span className='description'>{slide.description}</span>
+                    </div>
                   </div>
-                </div>
+                </a>
               </SwiperSlide>
             ))}
           </Swiper>

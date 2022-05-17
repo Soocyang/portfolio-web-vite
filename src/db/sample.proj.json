@@ -8,7 +8,8 @@
       "React Bootstrap",
       "JSON"
     ],
-    "thumbnail_url": "/ingredient-picker.jpeg"
+    "thumbnail_url": "/ingredient-picker.jpeg",
+    "project_url": "https://github.com/Soocyang/multiple-select-form"
   },
   {
     "title": "Link Shortener",
@@ -19,7 +20,8 @@
       "NodeJS",
       "json-server"
     ],
-    "thumbnail_url": "/link-shortener.png"
+    "thumbnail_url": "/link-shortener.png",
+    "project_url": "https://links.ciayang.dev/"
   },
   {
     "title": "Discord Bot",
@@ -30,7 +32,8 @@
       "NodeJS",
       "YouTube"
     ],
-    "thumbnail_url": "/dj-murrr-bot.png"
+    "thumbnail_url": "/dj-murrr-bot.png",
+    "project_url": "https://github.com/Soocyang/dj-murrr-bot"
   },
   {
     "title": "Mobile IELTS Listening Test System",
@@ -41,7 +44,8 @@
       ".NET Core",
       "Boostrap"
     ],
-    "thumbnail_url": "/ielts-tms.png"
+    "thumbnail_url": "/ielts-tms.png",
+    "project_url": "https://github.com/rockneverendz/BACS3403-Project"
   },
   {
     "title": "Canteen Management System",
@@ -52,6 +56,7 @@
       "JSP",
       "Boostrap"
     ],
-    "thumbnail_url": "/bricks-cms.png"
+    "thumbnail_url": "/bricks-cms.png",
+    "project_url": "https://github.com/rockneverendz/AACS3134-IS-Development"
   }
 ]

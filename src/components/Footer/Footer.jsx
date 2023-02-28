@@ -15,7 +15,7 @@ const Footer = () => {
           <span>Lim Soo Cia Yang © 2022</span>
         </span>
       </div>
-      <button onClick={handleTest}>T</button>
+      {/* <button onClick={handleTest}>T</button> */}
     </section>
   )
 }
